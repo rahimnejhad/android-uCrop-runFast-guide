@@ -94,7 +94,7 @@ public class Fragment_Home_Profile extends Fragment {
                 if (selectedUri != null) {
                     startCropActivity(data.getData());
                 } else {
-                    Toast.makeText(getContext(), "نمی توان عکس را دریافت کرد", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "cant recive image ...", Toast.LENGTH_SHORT).show();
                 }
             } else if (requestCode == UCrop.REQUEST_CROP) 
 			{
