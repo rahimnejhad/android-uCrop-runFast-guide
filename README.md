@@ -1,5 +1,5 @@
 # android-uCrop-runFast-guide
-** Quick Launch Guide **
+**Quick Launch Guide**
 
 **1)gradle :**
 ```
