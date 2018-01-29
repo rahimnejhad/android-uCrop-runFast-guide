@@ -97,16 +97,13 @@ public class Fragment_Home_Profile extends Fragment {
                     Toast.makeText(getContext(), "cant recive image ...", Toast.LENGTH_SHORT).show();
                 }
             } else if (requestCode == UCrop.REQUEST_CROP) 
-			{
-				//Handle Croped Image ...
-				
-                Uri mUri=UCrop.getOutput(data);
-                File userImageFile=new File(mUri.getPath());
+	    {
+	    	//Handle Croped Image ...		
+                **Uri mUri=UCrop.getOutput(data);**
+                **File userImageFile=new File(mUri.getPath());**
+		**Glide.with(getContext()).load(userImageFile).diskCacheStrategy(DiskCacheStrategy.ALL).fitCenter().into(ivStarImage);**
 
-                Glide.with(getContext()).load(userImageFile).diskCacheStrategy(DiskCacheStrategy.ALL).fitCenter().into(ivStarImage);
-
-                Send_File_To_Server(userImageFile);
-
+                **Send_File_To_Server(userImageFile);**
 
             }
         }
