@@ -98,7 +98,11 @@ public class Fragment_Home_Profile extends Fragment {
                 }
             } else if (requestCode == UCrop.REQUEST_CROP) 
 	    {
-	    	//Handle Croped Image ...		
+	    	//Handle Croped Image ...
+		//****************************
+		//Important part
+		//****************************
+		
                 Uri mUri=UCrop.getOutput(data);
                 File userImageFile=new File(mUri.getPath());
 		Glide.with(getContext()).load(userImageFile).diskCacheStrategy(DiskCacheStrategy.ALL).fitCenter().into(ivStarImage);
